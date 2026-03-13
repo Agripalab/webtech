@@ -1,0 +1,308 @@
+*{
+  padding:0px;
+  margin: 0px;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  color:white;
+  animation: body 20s infinite;
+  transition-timing-function: ease-in;
+  transition-delay: 8s;
+}
+@keyframes body{
+  0%{background-color: #110835;}
+  49%{background-color: rgb(3, 2, 58);}
+  100%{background-color: #230f79;}
+}
+.top-element,.left-items,.links-information,.right-items{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-between;
+}  
+.top-element{
+  background-color: #030216;
+}
+.location-icon{
+  width:35px;
+  background-color: #355872;
+  height:30px;
+  border-radius: 20px;
+}
+.right-items{
+  margin-left:0px;
+  width:500px;
+  margin-right:20px;
+}
+.list-items{
+  padding:20px;
+  margin-right:20px;
+  height:20px;
+  margin-top: 10px;
+  text-decoration: none;
+  padding-top:5px;
+  cursor:pointer;
+}
+.list-items:hover{
+  background-color: #355872;
+  box-shadow: 0 0 15px #ff5f00;
+  color:white;
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+.links-information{
+  list-style: none;
+}
+.name-creator{
+  font-size: 25px;
+  margin-left:40px;
+}
+.telegram-link{
+  width:40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: rgb(9, 70, 182);
+}
+.first-items{
+  background:url(luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:95%;
+  margin-top: 20px;
+  margin-left:25px;
+  height:500px;
+  border-radius: 15px;
+  display:flex;
+  align-items: center;
+}
+.introduction-part{
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.greeting{
+  font-size: 70px;
+  font-style: italic;
+}
+.auto-bio-btn{
+  height: 60px;
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border: none;
+  font-size: 15px;
+  background-color: burlywood;
+  color:white;
+  transition: background-color is ease-out, transform is ease-out;
+}
+.auto-bio-btn:hover{
+  background-color: aquamarine;
+  transform:scale(1.1);
+  border-radius: 15px;
+  color:black;
+}
+.word-to-change{
+    display: inline-block;
+    position: relative;
+    width: 200px; 
+    height: 1em; 
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.word-to-change::before {
+    content: "fullstack developer"; 
+    animation: word-to-change 9s infinite; 
+    position: absolute;
+    white-space: nowrap;
+    color:rgb(11, 235, 11);
+    font-weight: 600px;
+}
+
+@keyframes word-to-change {
+    0%, 33% {
+        content: "fullstack developer";
+        opacity: 1;
+    }
+    33.1%, 66% {
+        content: "DATA analyst";
+        opacity: 1;
+    }
+    66.1%, 100% {
+        content: "freelancer";
+        opacity: 1;
+    }
+    /* Fade transitions */
+    33%, 66% {
+        opacity: 0;
+    }
+}
+
+
+
+.intro-text{
+  margin-top:30px;
+  font-size: 25px;
+  font-family: cochin,times,cambria;
+  position:relative;
+  transition-timing-function: ease-in-out;
+  transition-delay:3s;
+  animation:intro-text 20s infinite;
+}
+@keyframes intro-text {
+  0%{top:0}
+  20%{top:10px;}
+  40%{top:0;}
+  60%{top:10px;}
+  80%{top:0;}
+  100%{top:10px;}
+  
+}
+.skil-img{
+  width:60px;
+  height: 60px;
+}
+.skil-img:hover{
+  width:70px;
+  height:60px;
+}
+.skills-container{
+  display:grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  gap:70px;
+}
+.skill-title{
+  margin-top:200px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main-skil{
+  background-color:#8e977d;
+  padding-left:10px;
+  padding-top: 10px ;
+  color:black;
+  padding-right: 10px;
+  border-radius:15px;
+  margin-left: 20px;
+  margin-top:20px;
+  transition-timing-function: ease-in;
+  position:relative;
+  transition-delay: 1s;
+  animation: main-skil 5s infinite;
+}
+@keyframes main-skil{
+  0%{top:0;bottom:10px}
+  10%{top:15px;bottom:5px}
+  20%{top:5px;bottom:15px;}
+  40%{top:15px;bottom:5px;}
+  60%{top:5px;bottom:15px;}
+  80%{top:15px;bottom:5px;}
+  100%{top:5px;bottom:15px;}
+}
+.main-skil:hover{
+  box-shadow: 0  0 20px rgb(3, 3, 43);
+  transform: scale(1.1);
+}
+.skil-title{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.my-projects{
+  margin-top: 200px;
+}
+.project-details-div,.my-projects{
+  display:grid;
+  grid-template-columns: 500px 2fr;
+  gap:20px;
+ 
+}
+.project-details,.tech-used{
+  background-color: rgba(233, 224, 224,0.1);
+  border-radius: 15px;
+   padding: 15px;
+
+}
+.project-details{
+  margin-left: 50px;
+   margin-top: 15px;
+}
+.project-fitures{
+  border:none;
+  padding: 15px;
+}
+.project-details:hover{
+  transform:scale(1.1);
+  box-shadow: 0 0 10px white;
+}
+.projects-title{
+  margin-left:40px;
+}
+.project-fitures-items{
+  margin-top:20px;
+  list-style: none;
+}
+.project-fitures{
+  list-style: none;
+  padding:10px;
+  font-size: 15px;
+}
+.project-fitures:hover{
+  color:limegreen;
+  transform: scale(1.1);
+}
+.technologies-used{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  gap:40px;
+}
+.tech-used{
+  margin-top: 40px;;
+  margin-left: 200px;
+  margin-right: 20px;
+}
+.technologies-title{
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.about-us-title{
+  text-align: center;
+  margin-top:200px;
+  margin-bottom: 20px;
+}
+.about-us-details{
+  width:70%;
+  margin-left:200px;
+}
+.contact-info{
+  display:grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap:20px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin:40px;
+  background-color: #3a1906;
+}
+.social-title{
+  margin-left: 20px;
+  font-family: arial;
+  font-size: 30px;
+  font-weight: 100px;
+  margin-top: 20px;
+}
+.social-img{
+  width: 60px;
+  height: 60px;
+}
+.social-img:hover{
+  transform:scale(1.4);
+  rotate:15deg;
+}
+.social-name{
+  padding-bottom: 15px;
+}
